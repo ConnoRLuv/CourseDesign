@@ -1,0 +1,11 @@
+S' -> S
+S -> C S | P S | L S  | M | S S
+C -> if ( boolean )
+P -> C M else
+M -> { L S }  | L | { S }
+L ->  A | L L
+boolean -> E <关系运算符> E | true | false
+A -> <普通标识符> = E ;
+E -> E + T | T | E - T
+T -> T * F | F | T / F
+F -> <普通标识符> | <整数> | <浮点数> | ( E )
