@@ -103,24 +103,12 @@ public class Parsing {
                     GOTO.add(gotoString);
                     print(++cnt, action, GOTO.get(GOTO.size() - 1));
                     switch (GOTOnum) {
-                        case 0:
-                            emit0();
-                            break;
-                        case 1:
-                            emit1();
-                            break;
+
                         case 2:
                             emit2();
                             break;
-                        case 3:
-                            emit3();
-                            break;
-                        case 4:
-                            emit4();
-                            break;
-                        case 5:
-                            emit5();
-                            break;
+
+
                         case 6:
                             emit6();
                             break;
@@ -193,13 +181,6 @@ public class Parsing {
     }
 
 
-    private void emit0() {
-
-    }
-
-    private void emit1() {
-
-    }
 
     private void emit2() {
         for (String string :
@@ -219,16 +200,7 @@ public class Parsing {
         RList.clear();
     }
 
-    private void emit3() {
 
-    }
-
-    private void emit4() {
-
-    }
-
-    private void emit5() {
-    }
 
     private void emit6() {
         TAC tac = new TAC("if " + AList.remove(AList.size() - 1) + " goto (" + (tacList.size() + 3) + ")");
